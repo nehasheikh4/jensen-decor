@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jensen Decore</title>
+    <link rel="shortcut icon" href="images/J.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <!-- animation link -->
+    <style>
+       body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+        }
+    </style>
+    </head>
+    <body>
+                 <!-- Navigation start -->
+                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightblue; position:sticky; top:0; z-index: 900 ;" >
+                  <div class="container">
+              <a class="navbar-brand" style="margin-left: 50px;" > <img src="./images/J.png" width="50px" height="50px" style="margin: 10px;">Jensen Decor</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive" style="margin-right: 50px;">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="About us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="comparision.html">Comparision</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Contact Us.html">Contact Us</a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Brands</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./Artisian Oasis.html">Artisian Oasis</a></li>
+                        <li><a class="dropdown-item" href="./Casa Chic.html">Casa Chic</a></li>
+                        <li><a class="dropdown-item" href=" ./DEcor Dynamics.html">Decor Dynamics</a></li>
+                        <li><a class="dropdown-item" href="./Design Dominion.html">Design Dominion</a></li>
+                 
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+            
+                      </ul>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navigation end -->
+    <!-- comparisn-home-section  -->
+   <!--BANNER-->
+<div class="container">
+  <img src="./images/Comparision.png " style="height: 100%; width: 100%;">
+</div>
+<!--BANNER end-->
+     <!-- heading -->
+     <!-- comparision container -->
+     <div class="container">
+       <div class="col-md-10 mx-auto">
+        <h2 class="compareheadtext-dark fs-1 my-5" style="text-align: center;" > Comparision Page</h2>
+          <table class="table">
+              <tr class="bg-light">
+                  <th>Select Product</th>
+                  <th width="300px">
+                      <select class="form-control" id="select1" onchange="item1(this.value)">
+                          <option value="0">-- Select Anyone --</option>
+                      </select>
+                  </th>
+                  <th width="300px">
+                      <select class="form-control" id="select2" onchange="item2(this.value)">
+                          <option value="0">-- Select Anyone --</option>
+                      </select>
+                  </th>
+              </tr>
+              <tr>
+                  <th>Product Image</th>
+                  <td>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                          id="img1" alt=" ">
+                  </td>
+                  <td>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                          id="img2" alt=" ">
+                  </td>
+              </tr>
+              <tr>
+                  <th>Product Price</th>
+                  <td id="price1">N/A</td>
+                  <td id="price2">N/A</td>
+              </tr>
+              <tr>
+                  <th>Product Brand</th>
+                  <td id="brand1">N/A</td>
+                  <td id="brand2">N/A</td>
+              </tr>
+          </table>
+
+      </div>
+  </div>
+ 
+     
+        
+       
+      <!-- foote start -->
+      <div class="mt-5">   
+        <footer
+                class="text-center text-lg-start text-dark"
+                style="background-color: #ECEFF1"
+                >
+          <!-- Section: Social media -->
+          <section
+                   class="d-flex justify-content-between p-4 text-white"
+                   style="background-color: lightblue"
+                   >
+            <!-- Left -->
+            <div class="me-5">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+      
+            <!-- Right -->
+            <div>
+              <a href="https://www.facebook.com/" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://twitter.com/?lang=en" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.google.com" class="text-white me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+           
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+      
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h3 class="text-uppercase fw-bold">Jensen Decor</h3>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                      We exits so you can have the art of love. when you find art you love, your space more...and thats what it's all about.
+                  </p>
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Brand Name</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="./Artisian Oasis.html" class="text-dark">Artisian Oasis</a>
+                  </p>
+                  <p>
+                      <a href="./Casa Chic.html" class="text-dark">Casa Chic</a>
+                    </p>
+                    <p>
+                      <a href="./DEcor Dynamics.html" class="text-dark">Decor Dynamics </a>
+                    </p>
+                  <p>
+                    <a href="./Design Dominion.html" class="text-dark">Design Dominion</a>
+                  </p>
+                
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Useful links</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p>
+                    <a href="Contact Us.html" class="text-dark">Contact Us</a>
+                  </p>
+                  <p>
+                    <a href="About us.html" class="text-dark">About Us</a>
+                  </p>
+                  <p>
+                    <a href="comparision.html" class="text-dark">Comparision</a>
+                  </p>
+                  
+                </div>
+                <!-- Grid column -->
+      
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto"
+                      style="width: 60px; background-color: #7c4dff; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i> Abc, Town 9D1, Karachi</p>
+                  <p><i class="fas fa-envelope mr-3"></i> Jensen Decor.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 00 000 00 00</p>
+                  <p><i class="fas fa-print mr-3"></i> + 00 000 00 00</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+      
+          <!-- Copyright -->
+          <div
+               class="text-center p-3"
+               style="background-color: lightblue"
+               >
+            © 2020 Copyright:
+            <a class="text-dark" href="#"
+               >Team Girls</a
+              >
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script>
+    for (var i = 1; i < product.length; i++) {
+    document.getElementById("select1").innerHTML += `
+    <option value="${i}">${product[i].title}</option>
+    `;
+    document.getElementById("select2").innerHTML += `
+    <option value="${i}">${product[i].title}</option>
+    `;
+}
+
+function item1(a) {
+    var select2 = document.getElementById("select2").value;
+    if (a != select2) {
+        document.getElementById("img1").src = product[a].image
+        document.getElementById("price1").innerHTML = "$ " + product[a].price
+        document.getElementById("brand1").innerHTML = product[a].brand
+
+    } else {
+        document.getElementById("select1").selectedIndex = 0;
+        document.getElementById("img1").src = product[0].image
+        document.getElementById("price1").innerHTML = ""
+        document.getElementById("desc1").innerHTML = ""
+        document.getElementById("brand1").innerHTML = ""
+
+    }
+}
+
+function item2(a) {
+    var select1 = document.getElementById("select1").value;
+    if (a != select1) {
+        document.getElementById("img2").src = product[a].image
+        document.getElementById("price2").innerHTML = "PKR " + product[a].price
+        document.getElementById("brand2").innerHTML = product[a].brand
+    } else {
+        document.getElementById("select2").selectedIndex = 0;
+        document.getElementById("img2").src = product[0].image
+        document.getElementById("price2").innerHTML = ""
+        document.getElementById("desc2").innerHTML = ''
+        document.getElementById("brand2").innerHTML = ""
+
+    }
+}
+  </script>
+</body>
+</html>
